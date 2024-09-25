@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none; /* Oculta a seção */
+}
+
+
 body{
     background: linear-gradient(to bottom, #32007c, #000);
     background-image: url("wallpaper1.png"); 

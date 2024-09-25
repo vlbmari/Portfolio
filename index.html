@@ -45,4 +45,25 @@
         </footer>
     </div>
 </body>
+
+
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const headerRect = header.getBoundingClientRect();
+
+            // Verifica se o topo da seção está acima do cabeçalho
+            if (rect.top < headerRect.bottom) {
+                section.classList.add('hidden');
+            } else {
+                section.classList.remove('hidden');
+            }
+        });
+    });
+</script>
 </html>
