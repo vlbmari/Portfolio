@@ -57,8 +57,8 @@
             const rect = section.getBoundingClientRect();
             const headerRect = header.getBoundingClientRect();
 
-            // Verifica se a parte inferior da seção está acima do cabeçalho
-            if (rect.bottom < headerRect.top) {
+            // Verifica se o topo da seção está acima do cabeçalho
+            if (rect.top < headerRect.bottom) {
                 section.classList.add('hidden');
                 section.classList.remove('visible');
             } else {
