@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Outfit:wght@700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Outfit:wght@500&display=swap');
+
+
+
+/*Reset CSS*/
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #32007c, #000);
+    background-image: url("wallpaper1.png"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fixo {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-size: cover;
+}
+
+button{
+    display: flex;
+    border-radius: 35px;
+    text-align: center;
+    margin: 1px;
+    padding: 15px 25px;
+    border-color: rgb(107, 233, 255);
+    box-shadow: 3px;
+    font-size: 20px;
+    font-family: "Anta", "sans-serif";
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: linear-gradient(75deg,#2dd5ff,#76e4ff,#2dd5ff);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Animação para transformação, cor da borda e sombra */
+
+
+
+}
+
+button:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    border-color: #67ffff; /* Altera a cor da borda ao passar o mouse */
+    box-shadow: 0 0 10px rgba(173, 245, 255, 0.76), 0 0 20px rgba(140, 238, 255, 0.705); /* Efeito de brilho com sombra */  
+}
+
+button a:hover {
+    color: #a43bcb; /* Cor ao passar o mouse */
+}
+
+
+h1{
+    font-family: "Anta", sans-serif;
+    color: #fffffffd;
+    font-size: 95px;
+}
+
+h2{
+    font-family: "Outfit", sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+p{
+    font-family: "Outfit", sans-serif;;
+    text-align:justify ;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 20%;
+    font-weight: 100;
+}
+
+a{  
+    display: inline-block; /* Faz o link se comportar como um bloco para permitir transformações */
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;  /* Aplica a animação 'pulsar' por 1 segundo ao passar o mouse */
+    
+}
+
+a:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do link em 10% quando o mouse está sobre ele */
+    color: hsl(180, 100%, 71%);
+}
+
+strong{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #6bffff;
+
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.roda-pe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: monospace; 
+    font-size: 25px; 
+    color:#fffcf3;
+
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 70px;
+    font-family: monospace; 
+    font-size: 25px; 
+    color:#fffcf3
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 8%;
+    gap: 29%;
+}
+
+.linha-main{
+    border-top: 0.2px solid #ffffff;
+    border-bottom: 0.2px solid #ffffff; 
+    padding: 12%;
+}
+
+.paragrafo-margem{
+    padding: 50px;
+}
+
+.img-logo{
+    width: 100px;
+    height: auto;
+}
+
+.img-animada{
+    animation: fade-pulse 2.5s ease-in-out infinite; /* Aplica a animação com duração de 2.5 segundos e repetição infinita */
+    width: 300px;
+    height: auto;
+    border-radius: 20%;
+    
+}
+
+
+@keyframes fade-pulse {
+    0% {
+        opacity: 1; /* Totalmente visível no início */
+        transform: scale(1); /* Tamanho normal no início */
+    }
+    50% {
+        opacity: 0.7; /* Diminuindo a opacidade no meio */
+        transform: scale(1.1); /* Aumenta o tamanho em 10% no meio da animação */
+    }
+    100% {
+        opacity: 1; /* Retorna a ser totalmente visível no final */
+        transform: scale(1); /* Retorna ao tamanho normal */
+    }
+}
