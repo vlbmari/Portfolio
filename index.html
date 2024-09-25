@@ -60,10 +60,13 @@
             // Verifica se o topo da seção está acima do cabeçalho
             if (rect.top < headerRect.bottom) {
                 section.classList.add('hidden');
+                section.classList.remove('visible');
             } else {
                 section.classList.remove('hidden');
+                section.classList.add('visible');
             }
         });
     });
 </script>
+
 </html>

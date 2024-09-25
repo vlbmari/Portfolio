@@ -14,7 +14,13 @@
 
 .hidden {
     opacity: 0; /* Oculta a seção com desvanecimento */
-    transition: opacity 0.5s ease; /* Animação suave */
+    visibility: hidden; /* Impede que a seção ocupe espaço */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Animação suave */
+}
+
+.visible {
+    opacity: 1; /* Exibe a seção */
+    visibility: visible; /* Permite que a seção ocupe espaço */
 }
 
 
