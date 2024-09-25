@@ -13,7 +13,8 @@
 }
 
 .hidden {
-    display: none; /* Oculta a seção */
+    opacity: 0; /* Oculta a seção com desvanecimento */
+    transition: opacity 0.5s ease; /* Animação suave */
 }
 
 
