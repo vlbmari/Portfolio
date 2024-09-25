@@ -19,11 +19,35 @@ body{
     background-attachment: fixed;
 }
 
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349); 
+    z-index: 1000; 
+}
+
+main{
+    padding: 12%;
+}
+
 .fixo {
     padding-right: 15px;
     padding-left: 15px;
     background-size: cover;
+    
 }
+
+footer{
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349); /* Sombra para cima */
+}
+
+
+
+
+
 
 button{
     display: flex;
@@ -128,19 +152,14 @@ strong{
     
 }
 
-.conteudo{
+.conteudo-titulo{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-right: 8%;
-    gap: 29%;
+    gap: 35%;
 }
 
-.linha-main{
-    border-top: 0.2px solid #ffffff;
-    border-bottom: 0.2px solid #ffffff; 
-    padding: 12%;
-}
 
 .paragrafo-margem{
     padding: 50px;
@@ -153,11 +172,16 @@ strong{
 
 .img-animada{
     animation: fade-pulse 2.5s ease-in-out infinite; /* Aplica a animação com duração de 2.5 segundos e repetição infinita */
-    width: 300px;
+    width: 400px;
     height: auto;
-    border-radius: 20%;
+
     
 }
+
+
+
+
+/* ANIMACAO */
 
 
 @keyframes fade-pulse {
@@ -174,3 +198,95 @@ strong{
         transform: scale(1); /* Retorna ao tamanho normal */
     }
 }
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .cabecalho-menu {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .cabecalho-menu {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #inicio {
+        display: flex;
+        flex-direction: column; /* Alinha itens na vertical */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 20px 0; /* Adiciona espaço ao redor da seção */
+        margin-top: 80px; /* Adiciona espaço acima da seção para não invadir o header */
+    }
+
+
+    header {
+        padding: 10px 5%; 
+    }
+    
+    h1 {
+        padding: 5%;
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    .cabecalho {
+        flex-direction: column; /* Empilha itens em vez de alinhá-los horizontalmente */
+        align-items: center;
+    }
+    .roda-pe {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .conteudo-titulo {
+        padding: 10px; 
+        display: flex;
+        flex-direction: column; /* Alinha itens na vertical */
+        align-items: center;
+    }
+
+    .conteudo-titulo h1 {
+        font-size: 7vw; 
+    }
+
+    .img-animada {
+        width: 90%; 
+    }
+
+    img{
+        padding: 3%;
+    }
+
+}
+
+
+
