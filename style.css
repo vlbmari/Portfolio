@@ -4,23 +4,10 @@
 
 
 /*Reset CSS*/
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.hidden {
-    opacity: 0; /* Oculta a seção com desvanecimento */
-    visibility: hidden; /* Impede que a seção ocupe espaço */
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Animação suave */
-}
-
-.visible {
-    opacity: 1; /* Exibe a seção */
-    visibility: visible; /* Permite que a seção ocupe espaço */
 }
 
 
@@ -38,28 +25,20 @@ header {
     right: 0;
     padding: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349); 
-    z-index: 1000; 
+    z-index: 1000;
+    background-color: #53b2ff77;
+     
 }
 
 main{
     padding: 12%;
 }
 
-.fixo {
-    padding-right: 15px;
-    padding-left: 15px;
-    background-size: cover;
-    
-}
+
 
 footer{
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349); /* Sombra para cima */
 }
-
-
-
-
-
 
 button{
     display: flex;
@@ -75,9 +54,6 @@ button{
     cursor: pointer;
     background: linear-gradient(75deg,#2dd5ff,#76e4ff,#2dd5ff);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Animação para transformação, cor da borda e sombra */
-
-
-
 }
 
 button:hover {
@@ -101,7 +77,8 @@ h2{
     font-family: "Outfit", sans-serif;
     color: #ffffff;
     font-size: 35px;
-    font-weight: 100;
+    font-weight: 100px;
+    padding: 40px;
 }
 
 p{
@@ -135,6 +112,14 @@ strong{
 
 }
 
+
+.fixo {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-size: cover;
+    
+}
+
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -152,6 +137,7 @@ strong{
     font-family: monospace; 
     font-size: 25px; 
     color:#fffcf3;
+
 
 }
 
@@ -182,15 +168,60 @@ strong{
     height: auto;
 }
 
+
 .img-animada{
     animation: fade-pulse 2.5s ease-in-out infinite; /* Aplica a animação com duração de 2.5 segundos e repetição infinita */
     width: 400px;
-    height: auto;
+    height: auto;   
+}
 
-    
+.vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.vertical p{
+
+    padding-bottom:10%;
 }
 
 
+.botao-imagem  {
+    border: 70px;
+    background-size: cover; /* Faz a imagem cobrir todo o botão */
+    background-position: center; /* Centraliza a imagem */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto */
+    padding: 30px 30px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: transform 0.2s; /* Animação suave */
+}
+
+.botao-imagem:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+#inicio{
+    scroll-margin-top: 230px;
+    padding-top: 5% ;
+    padding-bottom: 10%
+
+}
+
+#sobre{
+    scroll-margin-top: 150px;
+    padding-bottom: 10%
+}
+
+#projetos{
+    scroll-margin-top: 150px;
+    padding-bottom: 10%
+}
+
+#contato{
+    scroll-margin-top: 150px;
+}
 
 
 /* ANIMACAO */

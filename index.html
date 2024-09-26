@@ -19,8 +19,8 @@
             <nav class="cabecalho-menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#contato">Contato</a>
-                <a href="curriculo.html">Currículo</a>
             </nav>
         </header>
 
@@ -33,40 +33,64 @@
                 <h2 style="margin-left: 13px;">Desenvolvedora <strong>Full Stack</strong>!</h2> 
             </section>
             <section id="sobre">
-                
+                <h2>SOBRE MIM: </h2> 
+                <p class="paragrafo-margem">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas com foco em me tornar Full Stack, Tenho como objetivo desenvolver habilidades técnicas e contribuir
+                    para projetos, enquanto aprendo com uma equipe experiente. </br> 
+                    Atualmente estou adquirindo conhecimento nas stacksem que mais tenho familiaridade (HTML/CSS, Javascript, React JS, Node JS). </br> 
+                    Tenho como objetivo desenvolver habilidades técnicas e contribuir para projetos, enquanto aprendo com uma equipe experiente.
+                </p>
+
+                <h2>FORMAÇÃO:</h2>
+                    <p class="paragrafo-margem">
+                    <strong>UNIME</strong>, Lauro de Freitas — Ensino Superior
+                    <br>
+                    Agosto de 2022 - Em andamento <br>
+                    Curso Tecnólogo de Análise e Desenvolvimento de Sistemas (EAD). <br> <br>
+                    <strong>SENAI</strong>, Lauro de Freitas — Ensino Técnico <br>
+                    Janeiro de 2023 - Em andamento <br>
+                    Curso Técnico de Desenvolvimento de Sistemas (PRESENCIAL).
+                    </p>
             </section>
+            <section id="projetos">
+                <h2>PROJETOS:</h2>
+                    <p class="paragrafo-margem">
+                    Prime Events — PFC <br>
+                    Projeto PFC para desenvolver um aplicativo que facilite a organização de eventos. Nosso diferencial é a confirmação da presença, garantindo maior precisão. <br>
+                    Contribuí principalmente na concepção, apresentando ideias do projeto, e no desenvolvimento do Front-end. (Em andamento) <br> <br>
+                    IoT — RFID <br>
+                    Sistema RFID utilizando React, Node.js, MySQL e MQTT para IoT. <br>
+                    As funcionalidades incluem cadastro de pessoas e registro de presença.
+                </p>
+            </section>
+            
         </main>
 
         <footer class="roda-pe" id="contato">
-            <a href="https://www.linkedin.com/in/vlbmari/" target="_blank">LinkedIn</a> 
-            <a href="https://github.com/vlbmari" target="_blank">GitHub</a> 
-            <a href="https://www.instagram.com/vlbmari/" target="_blank">Instagram</a> 
-            <a href="mailto:slb.marianavitoria@gmail.com">Mail</a>
+            <div class="vertical">
+                <p>LinkedIn</p>
+                <button style="background-image: url('iconLink.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+            </div>
+            <div class="vertical">
+                <p>GitHub</p>
+                <button style="background-image: url('iconGit.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+            </div>
+            <div class="vertical">
+                <p>Instagram</p>
+                <button style="background-image: url('iconInsta.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+            </div>
+            <div class="vertical">
+                <p>Mail</p>
+                <button style="background-image: url('iconMail.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+            </div>
         </footer>
     </div>
 </body>
 
 
 
-<script>
-    const sections = document.querySelectorAll('section');
-    const header = document.querySelector('header');
 
-    window.addEventListener('scroll', () => {
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            const headerRect = header.getBoundingClientRect();
 
-            // Verifica se o topo da seção está acima do cabeçalho
-            if (rect.top < headerRect.bottom) {
-                section.classList.add('hidden');
-                section.classList.remove('visible');
-            } else {
-                section.classList.remove('hidden');
-                section.classList.add('visible');
-            }
-        });
-    });
-</script>
+
 
 </html>
