@@ -81,13 +81,25 @@ h2{
     padding: 40px;
 }
 
+.semPadding{
+    padding-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 8%;
+}
+
 p{
     font-family: "Outfit", sans-serif;;
     text-align:justify ;
     color: #ffffff;
     font-size: 25px;
     border-radius: 20%;
-    font-weight: 100;
+}
+
+strong{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400px;
+    color: #6bffff;
+
 }
 
 a{  
@@ -105,12 +117,6 @@ a:hover {
     color: hsl(180, 100%, 71%);
 }
 
-strong{
-    font-family: "Outfit", sans-serif;
-    font-weight: 400;
-    color: #6bffff;
-
-}
 
 
 .fixo {
@@ -154,8 +160,8 @@ strong{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-right: 8%;
-    gap: 35%;
+    gap: 50%;
+    padding-right: 34%;
 }
 
 
@@ -185,6 +191,7 @@ strong{
 
     padding-bottom:10%;
 }
+
 
 
 .botao-imagem  {
