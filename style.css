@@ -102,7 +102,6 @@ a {
     padding: 5px 15px;
     font-family: "Anta", "sans-serif";
     cursor: pointer;
-    
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -156,7 +155,7 @@ a:hover {
     padding-right: 34%;
 }
 
-.paragrafo-margem {
+section p {
     padding: 50px;
 }
 
@@ -204,6 +203,22 @@ a:hover {
 .botao-imagem:hover {
     transform: scale(1.05);
 }
+
+
+.projetos{
+    display: flex;
+    border-radius: 35px;
+    padding: auto;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos:hover {
+    transform: scale(1.1);
+    background: linear-gradient(75deg, #ffa42db9, #5cecff93, #ff2ded8c);
+    box-shadow: 0 0 10px rgba(173, 245, 255, 0.459), 0 0 20px rgba(140, 238, 255, 0.541);
+    
+}
+
 
 /* Seções */
 #inicio {
