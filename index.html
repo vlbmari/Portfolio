@@ -37,7 +37,7 @@
             <section id="sobre">
                 <h2>SOBRE MIM: </h2> 
                 <p class="paragrafo-margem" style="background: linear-gradient(75deg,#ffa42d9a,#5cecff57,#ff2ded57)">
-                    ㅤSou estudante de Análise e Desenvolvimento de Sistemas, com o objetivo de me tornar um desenvolvedor Full Stack. <br>
+                    ㅤSou estudante de Análise e Desenvolvimento de Sistemas, com o objetivo de me tornar uma desenvolvedora Full Stack. <br>
                     Em meio a 2024, consegui meu primeiro emprego na área, o que me proporcionou uma valiosa oportunidade de aprimorar meus conhecimentos. Aprendi a utilizar ferramentas como Power BI e me aprofundei no framework Angular, além de trabalhar com Web Forms, SQL Server e ADO.NET. Paralelamente, continuo desenvolvendo minhas habilidades nas stacks com as quais tenho mais familiaridade, como HTML, CSS, JavaScript, React.js e Node.js. <br>
                     Meu objetivo é fortalecer minhas habilidades técnicas e contribuir ativamente para projetos, enquanto aprendo com uma equipe experiente.
                 </p>
@@ -70,25 +70,36 @@
         <footer class="roda-pe" id="contato">
             <div class="vertical">
                 <p>LinkedIn</p>
-                <button style="background-image: url('iconLink.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+                <button class="botao-imagem" style="background-image: url('iconLink.png');" onclick="openLink('https://www.linkedin.com/in/vlbmari/')"></button>
             </div>
             <div class="vertical">
                 <p>GitHub</p>
-                <button style="background-image: url('iconGit.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+                <button class="botao-imagem" style="background-image: url('iconGit.png');" onclick="openLink('https://github.com/vlbmari')"></button>
             </div>
             <div class="vertical">
                 <p>Instagram</p>
-                <button style="background-image: url('iconInsta.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+                <button class="botao-imagem" style="background-image: url('iconInsta.png');" onclick="openLink('https://www.instagram.com/vlbmari/')"></button>
             </div>
             <div class="vertical">
                 <p>Mail</p>
-                <button style="background-image: url('iconMail.png');" class="botao-imagem" href="mailto:slb.marianavitoria@gmail.com"></button>
+                <button class="botao-imagem" style="background-image: url('iconMail.png');" onclick="openLink('mailto:slb.marianavitoria@gmail.com')"></button>
             </div>
         </footer>
-    </div>
 </body>
 
+<script>
+    function openLink(url) {
+        window.open(url, '_blank'); 
+    }
 
+
+    document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+    });
+</script>
 
 
 

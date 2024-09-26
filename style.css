@@ -175,7 +175,7 @@ a:hover {
 .botao-imagem {
     background-size: cover;
     background-position: center;
-    border: none;
+
     color: white;
     padding: 30px;
     cursor: pointer;
