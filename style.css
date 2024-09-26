@@ -90,8 +90,19 @@ p {
 
 strong {
     font-family: "Outfit", sans-serif;
-    color: #6bffff;
+    color: hsl(182, 100%, 84%);
 }
+
+
+strong:hover{
+    transform: scale(1.1);
+    background: linear-gradient(75deg, #ffa42d, #5cecff, #ff2ded);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
 
 /* Links */
 a {
@@ -169,6 +180,8 @@ section p {
     width: 400px;
     height: auto;
 }
+
+
 
 .vertical {
     display: flex;
