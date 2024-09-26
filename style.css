@@ -359,7 +359,17 @@ a:hover {
         font-size: 16px; 
     }
 
-    
+    button {
+        font-size: 18px; 
+        padding: 12px 20px; 
+    }
+
+    .fixo {
+        padding-right: 5px;
+        padding-left: 5px;
+        background-size: cover;
+        
+    }
 
     .cabecalho-menu {
         gap: 9px; 
@@ -380,10 +390,7 @@ a:hover {
         width: 80%;
     }
 
-    button {
-        font-size: 18px; 
-        padding: 12px 20px; 
-    }
+    
 
     .botao-imagem {
         padding: 20px; 
