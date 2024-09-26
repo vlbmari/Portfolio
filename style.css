@@ -1,132 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Outfit:wght@700&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Outfit:wght@500;700&display=swap');
 
-
-
-/*Reset CSS*/
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
+body {
     background: linear-gradient(to bottom, #32007c, #000);
-    background-image: url("wallpaper1.png"); 
+    background-image: url("wallpaper1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header {
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    padding: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349); 
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349);
     z-index: 1000;
     background-color: #53b2ff77;
-     
 }
 
-main{
+main {
     padding: 12%;
 }
 
-
-
-footer{
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349); /* Sombra para cima */
+footer {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
 }
 
-button{
+/* Botões */
+button {
     display: flex;
     border-radius: 35px;
     text-align: center;
     margin: 1px;
     padding: 15px 25px;
     border-color: rgb(107, 233, 255);
-    box-shadow: 3px;
     font-size: 20px;
     font-family: "Anta", "sans-serif";
     color: rgb(255, 255, 255);
     cursor: pointer;
-    background: linear-gradient(75deg,#2dd5ff,#76e4ff,#2dd5ff);
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Animação para transformação, cor da borda e sombra */
+    background: linear-gradient(75deg, #2dd5ff, #76e4ff, #2dd5ff);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
-    border-color: #67ffff; /* Altera a cor da borda ao passar o mouse */
-    box-shadow: 0 0 10px rgba(173, 245, 255, 0.76), 0 0 20px rgba(140, 238, 255, 0.705); /* Efeito de brilho com sombra */  
+    transform: scale(1.1);
+    border-color: #67ffff;
+    box-shadow: 0 0 10px rgba(173, 245, 255, 0.76), 0 0 20px rgba(140, 238, 255, 0.705);
 }
 
 button a:hover {
-    color: #a43bcb; /* Cor ao passar o mouse */
+    color: #a43bcb;
 }
 
-
-h1{
+/* Estilos de Títulos e Texto */
+h1 {
     font-family: "Anta", sans-serif;
     color: #fffffffd;
     font-size: 95px;
 }
 
-h2{
+h2 {
     font-family: "Outfit", sans-serif;
     color: #ffffff;
     font-size: 35px;
-    font-weight: 100px;
     padding: 40px;
 }
 
-.semPadding{
-    padding-left: 0%;
-    padding-top: 0%;
-    padding-bottom: 8%;
+.semPadding {
+    padding: 0 0 8%;
 }
 
-p{
-    font-family: "Outfit", sans-serif;;
-    text-align:justify ;
+p {
+    font-family: "Outfit", sans-serif;
+    text-align: justify;
     color: #ffffff;
     font-size: 25px;
     border-radius: 20%;
 }
 
-strong{
+strong {
     font-family: "Outfit", sans-serif;
-    font-weight: 400px;
     color: #6bffff;
-
 }
 
-a{  
-    display: inline-block; /* Faz o link se comportar como um bloco para permitir transformações */
+/* Links */
+a {
+    display: inline-block;
     text-decoration: none;
     font-family: "Outfit", sans-serif;
-    font-weight: 100;
     color: rgb(255, 255, 255);
-    transition: transform 0.3s ease;  /* Aplica a animação 'pulsar' por 1 segundo ao passar o mouse */
-    
+    transition: transform 0.3s ease;
 }
 
 a:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do link em 10% quando o mouse está sobre ele */
+    transform: scale(1.1);
     color: hsl(180, 100%, 71%);
 }
 
-
-
+/* Estruturas Flexíveis */
 .fixo {
     padding-right: 15px;
     padding-left: 15px;
-    background-size: cover;
-    
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -134,29 +119,26 @@ a:hover {
     padding: 30px;
 }
 
-.roda-pe{
+.roda-pe {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 30px;
-    font-family: monospace; 
-    font-size: 25px; 
-    color:#fffcf3;
-
-
+    font-family: monospace;
+    font-size: 25px;
+    color: #fffcf3;
 }
 
-.cabecalho-menu{
+.cabecalho-menu {
     display: flex;
     gap: 70px;
-    font-family: monospace; 
-    font-size: 25px; 
-    color:#fffcf3
-    
+    font-family: monospace;
+    font-size: 25px;
+    color: #fffcf3;
 }
 
-.conteudo-titulo{
+.conteudo-titulo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -164,94 +146,84 @@ a:hover {
     padding-right: 34%;
 }
 
-
-.paragrafo-margem{
+.paragrafo-margem {
     padding: 50px;
 }
 
-.img-logo{
+.img-logo {
     width: 100px;
     height: auto;
 }
 
-
-.img-animada{
-    animation: fade-pulse 2.5s ease-in-out infinite; /* Aplica a animação com duração de 2.5 segundos e repetição infinita */
+.img-animada {
+    animation: fade-pulse 2.5s ease-in-out infinite;
     width: 400px;
-    height: auto;   
+    height: auto;
 }
 
-.vertical{
+.vertical {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
 }
 
-.vertical p{
-
-    padding-bottom:10%;
+.vertical p {
+    padding-bottom: 10%;
 }
 
-
-
-.botao-imagem  {
-    border: 70px;
-    background-size: cover; /* Faz a imagem cobrir todo o botão */
-    background-position: center; /* Centraliza a imagem */
-    border: none; /* Remove a borda padrão */
-    color: white; /* Cor do texto */
-    padding: 30px 30px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    transition: transform 0.2s; /* Animação suave */
+/* Botões de Imagem */
+.botao-imagem {
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .botao-imagem:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.05);
 }
 
-#inicio{
+/* Seções */
+#inicio {
     scroll-margin-top: 230px;
-    padding-top: 5% ;
-    padding-bottom: 10%
-
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
-#sobre{
+#sobre {
     scroll-margin-top: 90px;
-    padding-bottom: 10%
+    padding-bottom: 10%;
 }
 
-#projetos{
+#projetos {
     scroll-margin-top: 150px;
-    padding-bottom: 10%
+    padding-bottom: 10%;
 }
 
-#contato{
+#contato {
     scroll-margin-top: 150px;
 }
 
-
-/* ANIMACAO */
-
-
+/* Animações */
 @keyframes fade-pulse {
     0% {
-        opacity: 1; /* Totalmente visível no início */
-        transform: scale(1); /* Tamanho normal no início */
+        opacity: 1;
+        transform: scale(1);
     }
     50% {
-        opacity: 0.7; /* Diminuindo a opacidade no meio */
-        transform: scale(1.1); /* Aumenta o tamanho em 10% no meio da animação */
+        opacity: 0.7;
+        transform: scale(1.1);
     }
     100% {
-        opacity: 1; /* Retorna a ser totalmente visível no final */
-        transform: scale(1); /* Retorna ao tamanho normal */
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-/* RESPONSIVIDADE */
-
-
+/* Responsividade */
 @media (max-width: 1200px) {
     h1 {
         font-size: 80px;
@@ -283,21 +255,19 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-
     #inicio {
         display: flex;
-        flex-direction: column; /* Alinha itens na vertical */
-        align-items: center; /* Centraliza horizontalmente */
-        text-align: center; /* Centraliza o texto */
-        padding: 20px 0; /* Adiciona espaço ao redor da seção */
-        margin-top: 80px; /* Adiciona espaço acima da seção para não invadir o header */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 80px;
     }
-
 
     header {
-        padding: 10px 5%; 
+        padding: 10px 5%;
     }
-    
+
     h1 {
         padding: 5%;
         font-size: 7vw;
@@ -310,93 +280,83 @@ a:hover {
     }
 
     .cabecalho {
-        flex-direction: column; 
+        flex-direction: column;
     }
     .roda-pe {
-        flex-direction: column; 
-        gap: 15px; 
+        flex-direction: column;
+        gap: 15px;
     }
     .conteudo-titulo {
-        padding: 10px; 
+        padding: 10px;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
 
     .conteudo-titulo h1 {
-        font-size: 7vw; 
+        font-size: 7vw;
     }
 
     .img-animada {
-        width: 90%; 
+        width: 90%;
     }
 
-    img{
+    img {
         padding: 3%;
     }
-
 }
 
 @media (max-width: 480px) {
-
-    main{
+    main {
         padding: 5%;
     }
 
     header {
-        padding: 10px 2%; 
+        padding: 10px 2%;
     }
 
     h1 {
-        font-size: 6vw; 
+        font-size: 6vw;
     }
 
     h2 {
-        font-size: 22px; 
+        font-size: 22px;
     }
 
     p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     button {
-        font-size: 18px; 
-        padding: 12px 20px; 
+        font-size: 18px;
+        padding: 12px 20px;
     }
 
     .fixo {
         padding-right: 5px;
         padding-left: 5px;
-        background-size: cover;
-        
     }
 
     .cabecalho-menu {
-        gap: 9px; 
+        gap: 9px;
         font-size: 16px;
     }
 
     .roda-pe {
-        flex-direction: column; 
-        gap: 10px; 
+        flex-direction: column;
+        gap: 10px;
     }
 
     .conteudo-titulo {
-        padding: 5%; 
-        align-items: center; 
+        padding: 5%;
+        align-items: center;
     }
 
     .img-animada {
         width: 80%;
     }
 
-    
-
     .botao-imagem {
-        padding: 20px; 
+        padding: 20px;
     }
 }
-
-
-
-
