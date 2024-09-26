@@ -310,8 +310,7 @@ a:hover {
     }
 
     .cabecalho {
-        flex-direction: column; /* Empilha itens em vez de alinhá-los horizontalmente */
-        align-items: center;
+        flex-direction: column; 
     }
     .roda-pe {
         flex-direction: column; 
@@ -320,7 +319,7 @@ a:hover {
     .conteudo-titulo {
         padding: 10px; 
         display: flex;
-        flex-direction: column; /* Alinha itens na vertical */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -337,6 +336,58 @@ a:hover {
     }
 
 }
+
+@media (max-width: 480px) {
+
+    
+
+    header {
+        padding: 10px 2%; 
+    }
+
+    h1 {
+        font-size: 6vw; 
+    }
+
+    h2 {
+        font-size: 22px; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+
+    
+
+    .cabecalho-menu {
+        gap: 6px; 
+        font-size: 16px;
+    }
+
+    .roda-pe {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .conteudo-titulo {
+        padding: 5%; 
+        align-items: center; 
+    }
+
+    .img-animada {
+        width: 80%;
+    }
+
+    button {
+        font-size: 18px; 
+        padding: 12px 20px; 
+    }
+
+    .botao-imagem {
+        padding: 20px; 
+    }
+}
+
 
 
 
