@@ -339,7 +339,9 @@ a:hover {
 
 @media (max-width: 480px) {
 
-    
+    main{
+        padding: 5%;
+    }
 
     header {
         padding: 10px 2%; 
@@ -360,7 +362,7 @@ a:hover {
     
 
     .cabecalho-menu {
-        gap: 6px; 
+        gap: 9px; 
         font-size: 16px;
     }
 
