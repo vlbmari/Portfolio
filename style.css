@@ -32,6 +32,8 @@ main {
 
 footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
+    background-color: #ffba5377;
+
 }
 
 /* Botões */
@@ -95,14 +97,22 @@ strong {
 a {
     display: inline-block;
     text-decoration: none;
-    font-family: "Outfit", sans-serif;
     color: rgb(255, 255, 255);
-    transition: transform 0.3s ease;
+    border-radius: 35px;
+    padding: 5px 15px;
+    font-family: "Anta", "sans-serif";
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 a:hover {
     transform: scale(1.1);
-    color: hsl(180, 100%, 71%);
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(75deg, #ffa42db9, #5cecff93, #ff2ded8c);
+    box-shadow: 0 0 10px rgba(173, 245, 255, 0.459), 0 0 20px rgba(140, 238, 255, 0.541);
+    
 }
 
 /* Estruturas Flexíveis */
@@ -169,13 +179,22 @@ a:hover {
 
 .vertical p {
     padding-bottom: 10%;
+    transition: transform 0.3s ease;
+    font-family: "Anta", "sans-serif";
+    color: hsl(182, 100%, 84%);
 }
+.vertical p:hover{
+    transform: scale(1.1);
+    background: linear-gradient(75deg, #ffa42d, #5cecff, #ff2ded);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 
 /* Botões de Imagem */
 .botao-imagem {
     background-size: cover;
     background-position: center;
-
     color: white;
     padding: 30px;
     cursor: pointer;
@@ -287,6 +306,7 @@ a:hover {
         gap: 15px;
     }
     .conteudo-titulo {
+        margin-top: 40px;
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -308,7 +328,8 @@ a:hover {
 
 @media (max-width: 480px) {
     main {
-        padding: 5%;
+        padding: 1%;
+
     }
 
     header {
