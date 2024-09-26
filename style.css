@@ -249,6 +249,9 @@ section p {
     scroll-margin-top: 150px;
     padding-bottom: 10%;
 }
+#projetos div{
+    margin: 5%;
+}
 
 #contato {
     scroll-margin-top: 150px;
