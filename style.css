@@ -32,7 +32,7 @@ main {
 
 footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
-    background-color: #ffba5377;
+    background-color: #8753ff27;
 
 }
 
@@ -96,7 +96,7 @@ strong {
 
 strong:hover{
     transform: scale(1.1);
-    background: linear-gradient(75deg, #ffa42d, #5cecff, #ff2ded);
+    background: linear-gradient(75deg, hsl(34, 100%, 84%), #a6f5ff, #ffb6f9);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -120,7 +120,7 @@ a {
 a:hover {
     transform: scale(1.1);
     color: hsl(0, 0%, 100%);
-    background: linear-gradient(75deg, #ffa42db9, #5cecff93, #ff2ded8c);
+    background: linear-gradient(75deg, #ffb0486e, #78e9f86e, #ff60f257);
     box-shadow: 0 0 10px rgba(173, 245, 255, 0.459), 0 0 20px rgba(140, 238, 255, 0.541);
     
 }
@@ -197,7 +197,7 @@ section p {
 }
 .vertical p:hover{
     transform: scale(1.1);
-    background: linear-gradient(75deg, #ffa42d, #5cecff, #ff2ded);
+    background: linear-gradient(75deg, #ffbe69, #8ff2ff, #ff76f4);
     -webkit-background-clip: text;
     color: transparent;
 }
