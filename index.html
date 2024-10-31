@@ -10,6 +10,7 @@
             background-image: url("wallpaper1.png");
         }
     </style>
+    <script src="functions.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,7 @@
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#contato">Contatos</a>
+                <button>DARK</button>
             </nav>
         </header>
 
@@ -101,23 +103,4 @@
         
         </footer>
 </body>
-
-<script>
-    function openLink(url) {
-        window.open(url, '_blank'); 
-    }
-
-
-    document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-    });
-</script>
-
-
-
-
-
 </html>
