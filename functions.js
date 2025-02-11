@@ -42,3 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function toggleMenu() {
+    const menu = document.querySelector('.cabecalho-menu');
+    menu.classList.toggle('active');
+}
+

@@ -52,8 +52,10 @@ body.dark-mode a:hover{
     color: #423c39;
     background: linear-gradient(75deg, #cd9193, #fddbcb, #ffd4cb);
     box-shadow: 0 0 10px #fddbcbb2, 0 0 20px #fddbcb;
+}
 
-    #ffb6a65d, #fddbcb, #cd9193, #423c39c4
+body.dark-mode .projetos p:hover{
+    color: #423c39;
 }
 
 body {
@@ -237,12 +239,6 @@ section p {
     color: #423c39;
 }
 
-.vertical p:hover{
-    transform: scale(1.1);
-    background: #cd9193;
-    -webkit-background-clip: text;
-    color: transparent;
-}
 
 
 /* Botões de Imagem */
@@ -316,37 +312,6 @@ section p {
     }
 }
 
-/* Responsividade */
-@media (max-width: 1200px) {
-    h1 {
-        font-size: 80px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 22px;
-    }
-    .cabecalho-menu {
-        gap: 50px;
-    }
-}
-
-@media (max-width: 900px) {
-    h1 {
-        font-size: 65px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    p {
-        font-size: 20px;
-    }
-    .cabecalho-menu {
-        gap: 30px;
-    }
-}
-
 @media (max-width: 600px) {
     #inicio {
         display: flex;
@@ -387,6 +352,21 @@ section p {
         align-items: center;
     }
 
+    .cabecalho-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Ajuste o gap para evitar o corte dos links */
+        font-family: monospace;
+        font-size: 18px; /* Reduzi o tamanho da fonte para não ocupar tanto espaço */
+        color: #cd9193;
+        text-align: center;
+    }
+
+    .cabecalho-menu a {
+        font-size: 18px; /* Ajustando tamanho da fonte para links */
+        padding: 10px 20px;
+    }
+
     .conteudo-titulo h1 {
         font-size: 7vw;
     }
@@ -398,12 +378,31 @@ section p {
     img {
         padding: 3%;
     }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 300px;
+        padding-bottom: 50px; /* Garantir que o footer não seja cortado */
+    }
+
+    footer {
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
+        background-color: #ffb6a660;
+        margin-top: 20px; /* Garantir que o footer tenha espaçamento */
+        padding: 20px; /* Ajuste o padding para o footer */
+    }
+
+    main {
+        padding: 15% 5%; /* Ajustando o padding para o conteúdo */
+        margin-bottom: 100px; /* Garantir que o footer não seja coberto */
+    }
 }
 
 @media (max-width: 480px) {
     main {
-        padding: 1%;
-
+        padding: 10% 5%;
     }
 
     header {
@@ -433,8 +432,13 @@ section p {
     }
 
     .cabecalho-menu {
-        gap: 9px;
+        gap: 10px; /* Reduzido o espaçamento entre os links */
         font-size: 16px;
+    }
+
+    .cabecalho-menu a {
+        font-size: 16px; /* Ajustando o tamanho dos links */
+        padding: 8px 15px; /* Ajustando padding dos links */
     }
 
     .roda-pe {
@@ -453,5 +457,25 @@ section p {
 
     .botao-imagem {
         padding: 20px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 300px;
+        padding-bottom: 40px; /* Garantir que o footer não seja cortado */
+    }
+
+    footer {
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
+        background-color: #ffb6a660;
+        margin-top: 20px; /* Garantir que o footer tenha espaçamento */
+        padding: 15px; /* Ajuste o padding para o footer */
+    }
+
+    main {
+        padding: 10% 5%; /* Ajustando o padding */
+        margin-bottom: 70px; /* Garantir que o footer não fique oculto */
     }
 }
