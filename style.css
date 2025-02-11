@@ -463,7 +463,7 @@ section p {
         background-size: cover;
         background-position: center center;
         background-attachment: scroll;
-        margin-top: 300px;
+        margin-top: 400px;
         padding-bottom: 40px; /* Garantir que o footer não seja cortado */
     }
 
