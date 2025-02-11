@@ -8,9 +8,56 @@
     box-sizing: border-box;
 }
 
+
+
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    color: #ffffff; /* Cor do texto clara */
+    background-image: url(wallpaperDark.png);
+
+
+}
+
+body.dark-mode .cabecalho,
+body.dark-mode .roda-pe{
+    background-color: #383331bb; /* Cor do cabeçalho e rodapé escura */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode strong {
+    color: #fddbcb; /* Cor do texto no modo escuro */
+}
+
+body.dark-mode button{
+    background-color: #fddbcb;
+    color: #423c39;
+    border-color: #423c39c4;
+}
+
+body.dark-mode button:hover{
+    transform: scale(1.1);
+    border-color: #fddbcb;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.76), 0 0 20px rgba(255, 217, 191, 0.705);
+}
+
+body.dark-mode strong:hover{
+    color: #cd9193;
+}
+
+body.dark-mode a:hover{
+    color: #423c39;
+    background: linear-gradient(75deg, #cd9193, #fddbcb, #ffd4cb);
+    box-shadow: 0 0 10px #fddbcbb2, 0 0 20px #fddbcb;
+
+    #ffb6a65d, #fddbcb, #cd9193, #423c39c4
+}
+
 body {
-    background: linear-gradient(to bottom, #32007c, #000);
-    background-image: url("wallpaper1.png");
+    background-image: url("wallpaper.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -23,7 +70,7 @@ header {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349);
     z-index: 1000;
-    background-color: #53b2ff77;
+    background-color: #ffb6a65d;
 }
 
 main {
@@ -32,8 +79,7 @@ main {
 
 footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
-    background-color: #8753ff27;
-
+    background-color: #ffb6a660;
 }
 
 /* Botões */
@@ -43,35 +89,32 @@ button {
     text-align: center;
     margin: 1px;
     padding: 15px 25px;
-    border-color: rgb(107, 233, 255);
+    border-color: #cd9193;
     font-size: 20px;
     font-family: "Anta", "sans-serif";
-    color: rgb(255, 255, 255);
+    color: #fddbcb;
     cursor: pointer;
-    background: linear-gradient(75deg, #2dd5ff, #76e4ff, #2dd5ff);
+    background-color: #423c39;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
     transform: scale(1.1);
-    border-color: #67ffff;
-    box-shadow: 0 0 10px rgba(173, 245, 255, 0.76), 0 0 20px rgba(140, 238, 255, 0.705);
+    border-color: #423c39;;
+    box-shadow: 0 0 10px #423c39ab, 0 0 20px #423c396b;
 }
 
-button a:hover {
-    color: #a43bcb;
-}
 
 /* Estilos de Títulos e Texto */
 h1 {
     font-family: "Anta", sans-serif;
-    color: #fffffffd;
+    color: #423c39;
     font-size: 95px;
 }
 
 h2 {
     font-family: "Outfit", sans-serif;
-    color: #ffffff;
+    color: #423c39;
     font-size: 35px;
     padding: 40px;
 }
@@ -83,32 +126,30 @@ h2 {
 p {
     font-family: "Outfit", sans-serif;
     text-align: justify;
-    color: #ffffff;
+    color: #423c39;
     font-size: 25px;
     border-radius: 20%;
 }
 
 strong {
     font-family: "Outfit", sans-serif;
-    color: hsl(182, 100%, 84%);
+    color: #423c39;
+    
 }
 
 
 strong:hover{
     transform: scale(1.1);
-    background: linear-gradient(75deg, hsl(34, 100%, 84%), #a6f5ff, #ffb6f9);
+    background: #cd9193;
     -webkit-background-clip: text;
     color: transparent;
 }
-
-
-
 
 /* Links */
 a {
     display: inline-block;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color:  #423c39;
     border-radius: 35px;
     padding: 5px 15px;
     font-family: "Anta", "sans-serif";
@@ -119,9 +160,9 @@ a {
 
 a:hover {
     transform: scale(1.1);
-    color: hsl(0, 0%, 100%);
-    background: linear-gradient(75deg, #ffb0486e, #78e9f86e, #ff60f257);
-    box-shadow: 0 0 10px rgba(173, 245, 255, 0.459), 0 0 20px rgba(140, 238, 255, 0.541);
+    color: #cd9193;
+    background: linear-gradient(75deg, #423c39, #2c2825, #423c39);
+    box-shadow: 0 0 10px #423c39ab, 0 0 20px #423c396b;
     
 }
 
@@ -147,7 +188,7 @@ a:hover {
     padding: 30px;
     font-family: monospace;
     font-size: 25px;
-    color: #fffcf3;
+    color: #cd9193;
 }
 
 .cabecalho-menu {
@@ -155,7 +196,7 @@ a:hover {
     gap: 70px;
     font-family: monospace;
     font-size: 25px;
-    color: #fffcf3;
+    color: #cd9193;
 }
 
 .conteudo-titulo {
@@ -193,11 +234,12 @@ section p {
     padding-bottom: 10%;
     transition: transform 0.3s ease;
     font-family: "Anta", "sans-serif";
-    color: hsl(182, 100%, 84%);
+    color: #423c39;
 }
+
 .vertical p:hover{
     transform: scale(1.1);
-    background: linear-gradient(75deg, #ffbe69, #8ff2ff, #ff76f4);
+    background: #cd9193;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -211,6 +253,7 @@ section p {
     padding: 30px;
     cursor: pointer;
     transition: transform 0.2s;
+    
 }
 
 .botao-imagem:hover {
@@ -227,9 +270,9 @@ section p {
 
 .projetos:hover {
     transform: scale(1.1);
-    background: linear-gradient(75deg, #ffa42db9, #5cecff93, #ff2ded8c);
-    box-shadow: 0 0 10px rgba(173, 245, 255, 0.459), 0 0 20px rgba(140, 238, 255, 0.541);
-    
+    background: linear-gradient(75deg, #ffb6a65d, #fddbcb, #cd9193);
+    box-shadow: 0 0 10px #ffb6a65d, 0 0 20px #ffb6a65d;
+
 }
 
 
