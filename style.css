@@ -90,7 +90,7 @@ button {
     border-radius: 35px;
     text-align: center;
     margin: 1px;
-    padding: 15px 25px;
+    padding: 1px 15px;
     border-color: #cd9193;
     font-size: 20px;
     font-family: "Anta", "sans-serif";
@@ -199,6 +199,7 @@ a:hover {
     font-family: monospace;
     font-size: 25px;
     color: #cd9193;
+    
 }
 
 .conteudo-titulo {
@@ -297,6 +298,7 @@ section p {
 }
 
 
+
 /* Animações */
 @keyframes fade-pulse {
     0% {
@@ -313,170 +315,12 @@ section p {
     }
 }
 
-@media (max-width: 600px) {
-    #inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 80px;
-    }
-
-    header {
-        padding: 10px 5%;
-    }
-
-    h1 {
-        padding: 5%;
-        font-size: 7vw;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    p {
-        font-size: 18px;
-    }
-
-    .cabecalho {
-        flex-direction: column;
-    }
-    .roda-pe {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .conteudo-titulo {
-        margin-top: 40px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cabecalho-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 15px; /* Ajuste o gap para evitar o corte dos links */
-        font-family: monospace;
-        font-size: 18px; /* Reduzi o tamanho da fonte para não ocupar tanto espaço */
-        color: #cd9193;
-        text-align: center;
-    }
-
-    .cabecalho-menu a {
-        font-size: 18px; /* Ajustando tamanho da fonte para links */
-        padding: 10px 20px;
-    }
-
-    .conteudo-titulo h1 {
-        font-size: 7vw;
-    }
-
-    .img-animada {
-        width: 90%;
-    }
-
-    img {
-        padding: 3%;
-    }
-
-    body {
-        background-size: cover;
-        background-position: center center;
-        background-attachment: scroll;
-        margin-top: 300px;
-        padding-bottom: 50px; /* Garantir que o footer não seja cortado */
-    }
-
-    footer {
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
-        background-color: #ffb6a660;
-        margin-top: 20px; /* Garantir que o footer tenha espaçamento */
-        padding: 20px; /* Ajuste o padding para o footer */
-    }
-
-    main {
-        padding: 15% 5%; /* Ajustando o padding para o conteúdo */
-        margin-bottom: 100px; /* Garantir que o footer não seja coberto */
-    }
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: #cd9193;
+    display: none;
 }
 
-@media (max-width: 480px) {
-    main {
-        padding: 10% 5%;
-    }
-
-    header {
-        padding: 10px 2%;
-    }
-
-    h1 {
-        font-size: 6vw;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    button {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
-
-    .fixo {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
-    .cabecalho-menu {
-        gap: 10px; /* Reduzido o espaçamento entre os links */
-        font-size: 16px;
-    }
-
-    .cabecalho-menu a {
-        font-size: 16px; /* Ajustando o tamanho dos links */
-        padding: 8px 15px; /* Ajustando padding dos links */
-    }
-
-    .roda-pe {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .conteudo-titulo {
-        padding: 5%;
-        align-items: center;
-    }
-
-    .img-animada {
-        width: 80%;
-    }
-
-    .botao-imagem {
-        padding: 20px;
-    }
-
-    body {
-        background-size: cover;
-        background-position: center center;
-        background-attachment: scroll;
-        margin-top: 400px;
-        padding-bottom: 40px; /* Garantir que o footer não seja cortado */
-    }
-
-    footer {
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
-        background-color: #ffb6a660;
-        margin-top: 20px; /* Garantir que o footer tenha espaçamento */
-        padding: 15px; /* Ajuste o padding para o footer */
-    }
-
-    main {
-        padding: 10% 5%; /* Ajustando o padding */
-        margin-bottom: 70px; /* Garantir que o footer não fique oculto */
-    }
-}

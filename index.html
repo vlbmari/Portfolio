@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VLB Portfólio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="responsividade.css">
     <script src="functions.js"></script>
 </head>
 
 <body>
     <div class="fixo">
-            <header class="cabecalho">
-                <img class="img-logo" src="logomz.png" alt="Logo">
-                <nav class="cabecalho-menu">
-                    <a href="#inicio">Início</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#contato">Contatos</a>
-                </nav>
-            </header>
+        <header class="cabecalho">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+            <img class="img-logo" src="logomz.png" alt="Logo">
+            <nav class="cabecalho-menu" id="menu-mobile">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contatos</a>
+                <button id="toggle-dark-mode">ㅤ⏾</button>
+            </nav>
+            
+        </header>
         <main>
-            <button id="toggle-dark-mode">Modo Escuro</button>
             <section id="inicio">
                 <div class="conteudo-titulo">
                     <h1>Mariana <br> Lourenço</h1>
@@ -40,13 +42,12 @@
 
                 <h2>FORMAÇÃO:</h2>
                     <p>
-                    <strong>Estácio</strong>, Lauro de Freitas — Ensino Superior.
-                    <br>
+                    <strong>Estácio</strong>, Lauro de Freitas — Ensino Superior.<br>
                     Janeiro 2025 - Em andamento <br>
-                    Engenharia de Software. <br> <br>
+                    <strong>Engenharia de Software. </strong><br> <br>
                     <strong>SENAI</strong>, Lauro de Freitas — Ensino Técnico. <br>
                     Janeiro de 2023 - Dezembro de 2024 <br>
-                    Desenvolvimento de Sistemas.
+                    <strong>Desenvolvimento de Sistemas.</strong>
                     </p>
             </section>
             <section id="projetos">
