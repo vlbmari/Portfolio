@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Alterna a classe 'active' no menu
             menu.classList.toggle('active');
         });
+        
     }
 
     // Modo escuro
