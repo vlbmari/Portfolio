@@ -1,3 +1,7 @@
+function openLink(url) {
+    window.open(url, "_blank"); // Abre o link em uma nova aba
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Código para rolagem suave
     document.querySelectorAll('a[href^="#"]').forEach(link => {

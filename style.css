@@ -701,7 +701,6 @@ section p {
     }
 
     .roda-pe {
-        flex-direction: column;
         gap: 10px;
     }
 
