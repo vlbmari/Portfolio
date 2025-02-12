@@ -690,16 +690,6 @@ section p {
         padding-left: 5px;
     }
 
-    .menu-toggle {
-        background: none;
-        border: none;
-        font-size: 35px;
-        cursor: pointer;
-        color: #cd9193;
-        display: none;
-    }
-    
-
     .cabecalho-menu {
         gap: 10px; /* Reduzido o espaçamento entre os links */
         font-size: 16px;
