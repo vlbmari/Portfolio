@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.toggle('dark-mode');
 
             if (document.body.classList.contains('dark-mode')) {
-                toggleDarkModeButton.textContent = '☀︎ㅤ';
+                toggleDarkModeButton.textContent = 'Light';
                 imagem.src = 'profileDark.png';
                 logoimg.src = 'logomzDark.png';
             } else {
-                toggleDarkModeButton.textContent = 'ㅤ⏾';
+                toggleDarkModeButton.textContent = 'Dark';
                 imagem.src = 'profile.png'; 
                 logoimg.src = 'logomz.png';
             }

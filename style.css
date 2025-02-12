@@ -9,19 +9,25 @@
 }
 
 
-
+#toggle-dark-mode {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
 
 /* Estilos para o modo escuro */
 body.dark-mode {
-    color: #ffffff; /* Cor do texto clara */
+    color: #ffffff;
     background-image: url(wallpaperDark.png);
 
 
 }
 
-body.dark-mode .cabecalho,
+body.dark-mode .cabecalho{
+    background-color: #1d1b1be0;
+}
 body.dark-mode .roda-pe{
-    background-color: #383331bb; /* Cor do cabeçalho e rodapé escura */
+    background-color: #22171ead;
 }
 
 body.dark-mode h1,
@@ -29,7 +35,7 @@ body.dark-mode h2,
 body.dark-mode p,
 body.dark-mode a,
 body.dark-mode strong {
-    color: #fddbcb; /* Cor do texto no modo escuro */
+    color: #fddbcb; 
 }
 
 body.dark-mode button{
@@ -72,7 +78,7 @@ header {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.349);
     z-index: 1000;
-    background-color: #ffb6a65d;
+    background-color: #fde8e8d5;
 }
 
 main {
@@ -99,6 +105,7 @@ button {
     background-color: #423c39;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 button:hover {
     transform: scale(1.1);
@@ -324,3 +331,419 @@ section p {
     display: none;
 }
 
+
+/* Responsividade */
+@media (max-width: 1450px) {
+    .conteudo-titulo {
+        margin-top: 40px;
+    }
+
+    .img-animada{
+        width: auto;
+        height: 300px ;
+    }
+
+    main {
+        padding: 15% 5%; 
+        margin-bottom: 100px; 
+    }
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .semPadding{
+        justify-content: center;  
+        text-align: center; 
+    }  
+
+    header {
+        padding: 10px 5%;
+    }
+
+    h1 {
+        padding: 2%;
+        font-size: 7vw;
+    }
+
+
+
+    .conteudo-titulo {
+        margin-top: 20px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  /* Adiciona centralização vertical */
+        text-align: center;  /* Adiciona centralização do texto dentro dos elementos */
+    }
+
+
+
+    .conteudo-titulo h1 {
+        font-size: 7vw;
+    }
+
+    .img-animada {
+        width: auto;
+        height: 400px;
+    }
+
+    img {
+        padding: 2%;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 20px;
+        padding-bottom: 50px; 
+    }
+
+
+    main {
+        padding: 15% 5%; 
+        margin-bottom: 100px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+@media (max-width: 915px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: #332823;
+        cursor: pointer;
+        left: 80%; 
+    }
+
+    a{
+        margin-bottom: 10px;
+    }
+
+    button:hover#menu-toggle{
+        transform: scale(1.4);
+        border-color: none;
+        box-shadow: none;
+    }    
+
+
+    .cabecalho-menu #toggle-dark-mode {
+        display: none; 
+    }
+
+    .cabecalho-menu {
+        display: none; 
+
+    }
+
+    .cabecalho-menu a {
+        display: none; /*ocultos inicialmente */
+
+    }
+    
+    .cabecalho-menu.active {
+        display: block; /* Exibe*/
+    }
+
+    .cabecalho-menu.active a {
+        display: block; 
+    }
+    .cabecalho-menu.active #toggle-dark-mode {
+        display: block; 
+        margin-left: 20px; 
+    }
+
+    .semPadding{
+        justify-content: center;  /* Adiciona centralização vertical */
+        text-align: center;  /* Adiciona centralização do texto dentro dos elementos */
+    }  
+
+    header {
+        padding: 10px 5%;
+    }
+
+    h1 {
+        padding: 2%;
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+
+
+    .conteudo-titulo {
+        margin-top: 20px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        text-align: center;  
+    }
+
+
+    .cabecalho-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: monospace;
+        font-size: 18px; 
+        color: #cd9193;
+        text-align: center;
+    }
+
+.cabecalho-menu button{
+    padding: 5px 15px;
+    padding-top: 2px;
+}
+    .cabecalho-menu a {
+        font-size: 18px; 
+        padding: 10px 20px;
+    }
+
+    .conteudo-titulo h1 {
+        font-size: 7vw;
+    }
+
+    .img-animada {
+        width: auto;
+        height: 75%px ;
+    }
+
+    img {
+        padding: 1%;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 20px;
+        padding-bottom: 50px; 
+    }
+
+
+    main {
+        padding: 15% 5%; 
+        margin-bottom: 100px; 
+    }
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px 5%;
+    }
+
+    h1 {
+        padding: 2%;
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+            text-align: left; 
+            word-spacing: normal; 
+            letter-spacing: normal; 
+
+    }
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .roda-pe {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .conteudo-titulo {
+        margin-top: 40px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        text-align: center;  
+    }
+
+
+    .cabecalho-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+        font-family: monospace;
+        font-size: 18px; 
+        color: #cd9193;
+        text-align: center;
+    }
+
+    .cabecalho-menu a {
+        font-size: 18px; 
+        padding: 10px 20px;
+    }
+
+    .conteudo-titulo h1 {
+        font-size: 7vw;
+    }
+
+    .img-animada {
+        width: auto;
+        height: 300px ;
+    }
+
+    img {
+        padding: 1%;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    footer {
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
+        background-color: #ffb6a660;
+        margin-top: 20px;
+        padding: 20px; 
+    }
+
+    main {
+        padding: 15% 5%; 
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    main {
+        padding: 10% 5%;
+    }
+
+    header {
+        padding: 10px 2%;
+    }
+
+    h1 {
+        font-size: 6vw;
+
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-right: 0px;
+        padding-left: 0px;
+
+    }
+
+    p {
+        font-size: 16px;
+        margin: -40px;
+    }
+
+
+    .img-logo{
+        width: auto;
+        height: 50px;
+    }
+
+
+    .fixo {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .menu-toggle {
+        background: none;
+        border: none;
+        font-size: 35px;
+        cursor: pointer;
+        color: #cd9193;
+        display: none;
+    }
+    
+
+    .cabecalho-menu {
+        gap: 10px; /* Reduzido o espaçamento entre os links */
+        font-size: 16px;
+    }
+
+    .cabecalho-menu a {
+        font-size: 16px; /* Ajustando o tamanho dos links */
+        padding: 8px 15px; /* Ajustando padding dos links */
+    }
+
+    .roda-pe {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conteudo-titulo {
+        padding: 5%;
+        align-items: center;
+    }
+
+    .img-animada {
+        width: auto;
+        height: 150px;
+    }
+
+    .botao-imagem {
+        padding: 20px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        margin-top: 50px;
+        padding-bottom: 40px;
+
+
+    }
+
+    footer {
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.349);
+        background-color: #ffb6a660;
+        margin-top: 20px; 
+        padding: 15px; 
+    }
+
+    main {
+        padding: 10% 5%; 
+        margin-bottom: 50px; 
+    }
+
+
+}
