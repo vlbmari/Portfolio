@@ -322,14 +322,14 @@ section p {
     }
 }
 
+.menu-close,
 .menu-toggle {
     background: none;
     border: none;
-    font-size: 35px;
-    cursor: pointer;
-    color: #cd9193;
     display: none;
 }
+
+
 
 
 /* Responsividade */
@@ -419,7 +419,7 @@ section p {
 
 
 @media (max-width: 915px) {
-    .menu-toggle {
+    .menu-toggle, .menu-close {
         display: block;
         position: absolute;
         top: 20px;
@@ -429,49 +429,51 @@ section p {
         font-size: 30px;
         color: #332823;
         cursor: pointer;
+    }
+
+    .menu-toggle{
         left: 80%; 
+    }
+    
+    .menu-close{
+        right: 80%;
     }
 
     a{
         margin-bottom: 10px;
     }
 
-    button:hover#menu-toggle{
+    button:hover#menu-toggle,
+    button:hover#menu-close {
         transform: scale(1.4);
         border-color: none;
         box-shadow: none;
     }    
 
-
-    .cabecalho-menu #toggle-dark-mode {
-        display: none; 
-    }
-
+/*ocultos inicialmente */
+    .cabecalho-menu #toggle-dark-mode,
+    .cabecalho-menu #menu-close,
+    .cabecalho-menu a,
     .cabecalho-menu {
         display: none; 
-
     }
 
-    .cabecalho-menu a {
-        display: none; /*ocultos inicialmente */
-
-    }
-    
-    .cabecalho-menu.active {
-        display: block; /* Exibe*/
-    }
-
+    /* Exibe*/
+    .cabecalho-menu.active #toggle-dark-mode,
+    .cabecalho-menu.active #menu-close,
+    .cabecalho-menu.active,
     .cabecalho-menu.active a {
         display: block; 
     }
+
     .cabecalho-menu.active #toggle-dark-mode {
-        display: block; 
         margin-left: 20px; 
     }
 
+
     .semPadding{
-        justify-content: center;  /* Adiciona centralização vertical */
-        text-align: center;  /* Adiciona centralização do texto dentro dos elementos */
+        justify-content: center;  
+        text-align: center;  
     }  
 
     header {

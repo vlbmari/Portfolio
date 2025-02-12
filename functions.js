@@ -13,15 +13,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Menu hamburguer
     const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
     const menu = document.getElementById('menu-mobile');
+    const header = document.querySelector('header');
     
     if (menuToggle && menu) {
         menuToggle.addEventListener('click', function() {
             // Alterna a classe 'active' no menu
             menu.classList.toggle('active');
         });
-        
     }
+
+    if (menuClose && menu) {
+        menuClose.addEventListener('click', function() {
+            // Remove a classe 'active' para fechar o menu
+            menu.classList.remove('active');
+        });
+    }
+
+    // Fecha o menu se clicar fora do header
+    document.addEventListener('click', function(event) {
+        if (!header.contains(event.target) && menu.classList.contains('active')) {
+            menu.classList.remove('active');
+        }
+    });
 
     // Modo escuro
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
