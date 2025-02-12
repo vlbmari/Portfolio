@@ -322,12 +322,15 @@ section p {
     }
 }
 
+#menu-toggle {
+    background: none;
+    border: none;
+    display: none;
+}
+
 .menu-toggle {
     background: none;
     border: none;
-    font-size: 35px;
-    cursor: pointer;
-    color: #cd9193;
     display: none;
 }
 
