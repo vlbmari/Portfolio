@@ -19,6 +19,10 @@
 body.dark-mode {
     color: #ffffff;
     background-image: url(wallpaperDark.png);
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 
 
 }
@@ -66,8 +70,11 @@ body.dark-mode .projetos p:hover{
 
 body {
     background-image: url("wallpaper.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+
 }
 
 header {
@@ -344,7 +351,7 @@ section p {
     }
 
     main {
-        padding: 15% 5%; 
+        padding: 11% 5%; 
         margin-bottom: 100px; 
     }
 
